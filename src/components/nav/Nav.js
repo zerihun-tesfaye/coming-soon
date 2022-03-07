@@ -4,38 +4,60 @@ import Contdown from '../count/Contdown';
 
 const Nav = () => {
   return (
-    <Container>
-          <Main className="container">
-             <Flex>
-               <div><Contdown/></div>
-               <div><h3>hello</h3></div>
-             </Flex>
-            </Main>
-         </Container>
+    <Header>
+          <NavC>
+            <div><Contdown/></div>
+                  <Logo>
+                     <span>zetaHut</span>
+                  </Logo>
+                     <Cart>
+                       <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" 
+                       xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round"
+                       strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 
+                       00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                </Cart>
+             </NavC>
+         </Header>
+             
+           
   )
 }
- const Container=styled.div`
+ const Header=styled.div`
    background: #161B22 ;
    width:100%;
+   height:3.5rem; 
+   align-items:center;
    padding:10px 0;
-   height:40px;
-   .container{
-     max-width:980px;
-     overflow: hidden;
-   }
+   
    `;
-   const Main =styled.div`
-       margin-bottom: 5em;
-       box-sizing: border-box;
-       align-items: center;
-       justify-content: center;
-       flex: 1;
-       `;
-   const Flex =styled.div`
-       justify-content: space-between;
+ const Logo=styled.div`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+     span{
+       font-size:1.5rem;
+       text-transform: capitalize;
+       letter-spacing:2px;
+     
+     }
+   `;
+ const Cart=styled.div`
+   cursor:pointer;
+     svg{
+       width:1.7rem;
+       height:1.7rem;
+     }
+   `;
+   const NavC =styled.div`
        display:flex;
        align-items: center;
-       
-    `;
+       justify-content:space-between;
+       margin:0 4.5rem;
+    @media  screen and (max-width:968px){
+       margin:0  1.4rem auto;
+       align-items: center;
+    }
+  `;
+   
 
 export default Nav

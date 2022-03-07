@@ -54,29 +54,23 @@ import  styled from 'styled-components'
   )
 }
 const Container=styled.div`
-   color: white;
-   align-items: center;
-   width: 100%;
+  width: 100%;
   `;
 const Con=styled.div`
   display:flex ;
-  gap:.4rem;
-  /* min-width:7em; */
+  gap:.3rem;
   text-align:center;
   color: #000;
   align-items:center;
   justify-content:center ;
   text-align: center;
-  line-height:2;
-  width: 100%;
 `;
 const Section=styled.div`
     display:flex ;
-    gap:.3rem;
+    gap:.2rem;
     text-align: center;
     align-items: center;
     color: white;
-    width: 100%;
     p{
       font-size:1rem;
       font-weight:400 ;
