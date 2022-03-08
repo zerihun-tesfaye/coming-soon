@@ -55,6 +55,7 @@ import  styled from 'styled-components'
 }
 const Container=styled.div`
   width: 100%;
+  overflow: hidden;
   `;
 const Con=styled.div`
   display:flex ;
@@ -64,6 +65,7 @@ const Con=styled.div`
   align-items:center;
   justify-content:center ;
   text-align: center;
+  overflow: hidden;
 `;
 const Section=styled.div`
     display:flex ;
@@ -71,6 +73,7 @@ const Section=styled.div`
     text-align: center;
     align-items: center;
     color: white;
+    overflow: hidden;
     p{
       font-size:1rem;
       font-weight:400 ;

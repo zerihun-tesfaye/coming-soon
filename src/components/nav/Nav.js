@@ -23,13 +23,11 @@ const Nav = () => {
   )
 }
  const Header=styled.div`
-   background: #161B22 ;
    width:100%;
-   height:3.5rem; 
    align-items:center;
    padding:10px 0;
-   
-   `;
+  height:3.5rem;
+  `;
  const Logo=styled.div`
     display:flex;
     justify-content:center;
