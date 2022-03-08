@@ -1,17 +1,24 @@
 import React from 'react'
 import  styled from 'styled-components'
- import CardD from '../data/CardData'
-import Contacts from './contact/Contacts'
- import Singups from './singup/Singup'
+import CardD from '../../data/CardData'
+ import Footers from '../footer/Footer'
+import Singups from '../singup/Singup'
+import Com from '../../asset/image/fff.png'
 
 const Home = () => {
   return (
     <Container>
+       <SubCon>
+
         <Content>
-          
              <Title>
+               <div className="Z6_text">
                 <h1>we are cooking our website!</h1>
-                <h2>Design  <h5>To</h5><span>.Build</span></h2>
+                  <span>
+                    <img src={Com} alt="" />
+                  </span>
+                 </div>
+                <h2>Design  <h5>+</h5><span>.Build</span></h2>
                 <h5>I create  a beautiful websites your users will love</h5>
                 <small>coming soon</small>
              </Title>
@@ -20,37 +27,41 @@ const Home = () => {
 
              </div>
             </Content>
-                 {/* 
-                  */}
-                   <Section>
-                  {
-                    CardD.map((item,index)=>{
-                       return(
-                         <Card key={index}>
-                          <div className="Z_img">
-                             <img src={item.image} alt="design" />
-                            </div>
-                           <div className="content">
-                               <h4>{item.title}</h4>
-                               <p>{item.Description}</p>
-                           </div>
-                       </Card>
+               <Section>
+                {
+                  CardD.map((item,index)=>{
+                    return(
+                      <Card key={index}>
+                        <div className="Z_img">
+                            <img src={item.image} alt="design" />
+                          </div>
+                          <div className="content">
+                              <h4>{item.title}</h4>
+                              <p>{item.Description}</p>
+                          </div>
+                      </Card>
 
-                       )
+                    )
                     })
-                  }
+                    }
                       
             </Section>
+            </SubCon>
              <div>
-             <Contacts/>
-             </div>
-
+              <Footers/>
+          </div>
     </Container>
+           
+
    
                       
   )
 }
 const Container=styled.div`
+   width:100%;
+   
+  `
+const SubCon=styled.div`
    width:100%;
    display:flex;
    align-items:center;
@@ -63,7 +74,6 @@ const Content=styled.div`
     flex-direction:column;
     justify-content:center;
     margin:5rem auto;
-    width:100%;
 `;
 const Title=styled.div`
 display:flex;
@@ -71,6 +81,29 @@ align-items:center:
 justify-content:center;
 flex-direction:column;
 text-align:center;
+.Z6_text{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:.752px;
+    overflow:hidden;
+     
+    span{
+      width:40px;
+      height:40px;
+      
+        @media screen and (max-width:978px){
+            width:20px;
+            height:20px;
+       }
+      img{
+        width:100%;
+        object-fit:cover;
+        height:100%;
+
+      }
+    }
+}
    h2{
      margin-bottom:.51rem;
      font-weight:500;
@@ -94,6 +127,10 @@ text-align:center;
      font-weight:700;
      letter-spacing:0.3px;
      text-transform:capitalize;
+     font-size:1.7rem;
+       @media screen and (max-width:978px){
+       font-size:20px;
+       }
    }
    h4{
        letter-spacing:0.3px;
@@ -110,7 +147,7 @@ text-align:center;
 `;
 //  
  const Section = styled.div`
-   padding:20px 0;
+   padding:5px 0;
    align-items:center;
    display: flex;
    justify-content:center;

@@ -12,19 +12,31 @@ const Singup = () => {
            <button type='submit'>notify me</button>
         </Incard>
       </form>
+      <h6> Please leave your email above and 
+           we'll notify you when we're ready!
+          </h6>
     </Container>
 
   )
 }
 const Container=styled.div`
-width:100%;
-  
-   
+  width:100%;
+  h6{
+    margin:3px 0;
+    font-size:.692rem;
+    text-align: center;
+     @media screen and (max-width:967px){
+         margin:1px 0;
+       }
+  }
 `;
 const Incard=styled.div`
   width:100%;
   display:flex;
   gap:.23rem;
+  padding:10px 0;
+  justify-content:center;
+  align-items:center;
     .box{
       width:300px;
        @media screen and (max-width:967px){
@@ -64,6 +76,7 @@ const Incard=styled.div`
         text-transform:capitalize;
         letter-spacing:0.5px;
         font-weight:500;
+        height:40px;
         &:hover{
           opacity: 0.7;
         }

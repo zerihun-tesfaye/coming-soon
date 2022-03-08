@@ -8,7 +8,7 @@ const Nav = () => {
           <NavC>
             <div><Contdown/></div>
                   <Logo>
-                     <span>zetaHut</span>
+                     <span>zeta <span className='hut'>Hut</span> </span>
                   </Logo>
                      <Cart>
                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" 
@@ -33,9 +33,13 @@ const Nav = () => {
     justify-content:center;
     align-items:center;
      span{
-       font-size:1.5rem;
+       font-size:1.3rem;
        text-transform: capitalize;
        letter-spacing:2px;
+       font-weight:bold;
+        .hut{
+          color: #6709CC;
+        }
      
      }
    `;

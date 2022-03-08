@@ -1,4 +1,4 @@
-import Home from "./components/Home";
+import Home from "./components/home/Home";
 import Nav from "./components/nav/Nav";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
          <Nav/>
           <div>
            <Home/>
-      </div>
+        </div>
     </div>
   );
 }
