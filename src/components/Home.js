@@ -1,8 +1,8 @@
 import React from 'react'
 import  styled from 'styled-components'
-import Pro  from '../asset/image/gg.jpg'
-import Mobile  from '../asset/image/mobile.jpg'
-import Code  from '../asset/image/code.png'
+ import CardD from '../data/CardData'
+import Contacts from './contact/Contacts'
+ import Singups from './singup/Singup'
 
 const Home = () => {
   return (
@@ -10,56 +10,44 @@ const Home = () => {
         <Content>
           
              <Title>
-                <h1>we are cooking our website stay tuned</h1>
-               <h2>Design.Build</h2>
-               <h5>I create  a beautiful websites your users will love</h5>
-               <small>coming soon</small>
+                <h1>we are cooking our website!</h1>
+                <h2>Design  <h5>To</h5><span>.Build</span></h2>
+                <h5>I create  a beautiful websites your users will love</h5>
+                <small>coming soon</small>
              </Title>
-               <Singup>
-                  <form action="">
-                      <div className="Z_con">
-                       <div className="box">
-                        <input type="text" placeholder="Email" required/>
-                        </div>
-                         <button type="submit">notify me</button>
-                      </div>
-                  </form>
-               </Singup>
-            
-               
-             </Content>
+             <div>
+            <Singups/>
+
+             </div>
+            </Content>
                  {/* 
                   */}
                    <Section>
-                     <Card>
+                  {
+                    CardD.map((item,index)=>{
+                       return(
+                         <Card key={index}>
                           <div className="Z_img">
-                             <img src={Mobile} alt="design" />
+                             <img src={item.image} alt="design" />
                             </div>
                            <div className="content">
-                               <h4>hello</h4>
-                               <p>description</p>
+                               <h4>{item.title}</h4>
+                               <p>{item.Description}</p>
                            </div>
                        </Card>
-                       <Card>
-                          <div className="Z_img">
-                             <img src={Code} alt="design" />
-                            </div>
-                           <div className="content">
-                               <h4>hello</h4>
-                               <p>description</p>
-                           </div>
-                       </Card>
-                       <Card>
-                      <div className="Z_img">
-                          <img src={Pro} alt="design" />
-                        </div>
-                        <div className="content">
-                            <h4>hello</h4>
-                            <p>description</p>
-                        </div>
-                 </Card>
+
+                       )
+                    })
+                  }
+                      
             </Section>
+             <div>
+             <Contacts/>
+             </div>
+
     </Container>
+   
+                      
   )
 }
 const Container=styled.div`
@@ -88,6 +76,18 @@ text-align:center;
      font-weight:500;
      letter-spacing:0.3px;
      text-transform:capitalize;
+     color:#02DBC6;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     text-align:center;
+     gap:.31rem;
+      span{
+          color:#FFD581;
+        }
+        h5{
+          color:#B00020;
+        }
    }
    h1{
      margin-bottom:.51rem;
@@ -108,60 +108,6 @@ text-align:center;
 
        }
 `;
-const Singup=styled.div`
-    padding:1rem 0;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width:100%;
-    form{
-      display:flex;
-      align-items: center;
-       .Z_con{
-         display:flex;
-         align-items: center;
-          gap:.2rem;
-          justify-content:center;
-          width:100%;
-          .box{
-            position:relative;
-            align-items: center;
-            display: flex;
-            
-             input{
-               width:100%;
-               padding:10px .82rem;
-               outline:none;
-               border:none;
-               margin:0 5px;
-              border-radius:5px; 
-              background:#1A1C23;
-              border:1px solid #3B3A51; 
-              color:white;
-            }
-          }
-          button{
-              background-color: #3B3A51;
-              color: white;
-              padding: 4px 10px;
-              border: none;
-              cursor: pointer;
-              opacity: 0.9;
-              padding:10px .82rem;
-              border-radius:5px ;
-              transition:all 0.3;
-              text-transform:capitalize;
-              letter-spacing:0.5px;
-              font-weight:500;
-              &:hover{
-                opacity: 0.7;
-              }
-
-          }   
-       }
-    }
-`;
 //  
  const Section = styled.div`
    padding:20px 0;
@@ -171,6 +117,7 @@ const Singup=styled.div`
    flex-direction:row;
    flex-wrap:wrap;
    gap:1.7rem;
+   overflow:hidden;
     @media screen and (max-width:978px){
        flex-direction:column;
        margin:0 auto;
@@ -183,9 +130,8 @@ const Singup=styled.div`
  `
  const Card = styled.div`
    width:270px;
-   height:270px;
+   height:320px;
    box-sizing:border-box;
-   /* background-image:linear-gradient(#03C6EA,#0FC9A5); */
    background:#3B3A51;
    border-radius:15px;
     .Z_img{
@@ -203,6 +149,35 @@ const Singup=styled.div`
       align-items:center;
       flex-direction:column;
       padding:5px 0;
+      width:100%;
+      h4{
+        word-wrap:break-word;
+        padding-bottom:4px;
+        font-size:1rem;
+        font-weight:700;
+        letter-spacing:.31px;
+        text-transform:capitalize;
+        color:white;
+      }
+      p{
+        word-wrap:break-word;
+        padding-top:4px;
+        margin:0 .21rem;
+        font-size:.852rem;
+        text-align:start;
+        align-items:center;
+        justify-content:center;
+        font-weight:300;
+        text-transform:capitalize;
+      @media screen and (max-width:978px){
+        text-align:center;
+        margin-top:.44rem;
+
+       
+    }
+
+      }
+
     }
  `
 export default Home;
