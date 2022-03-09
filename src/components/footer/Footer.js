@@ -18,6 +18,10 @@ const Footer = () => {
                  <a href="http://www.linkedin.com/in/zerihun-tesfaye">
                    <i className="fa fa-linkedin" aria-hidden="true"></i></a>
                  </li>
+               <li>
+                 <a href="http://www.github.com/zetahut">
+                   <i className="fa fa-github" aria-hidden="true"></i></a>
+                 </li>
 
                   <li>
                   <a href="http://www.twitter.com/zerihun16t">
@@ -113,6 +117,9 @@ const Container=styled.div`
               }
               .fa-twitter{
                   color:#00acee; 
+                  font-size:1.6rem;
+              }
+              .fa-github{
                   font-size:1.6rem;
               }
             a{

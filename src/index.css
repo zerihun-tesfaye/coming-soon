@@ -10,3 +10,19 @@ body{
   height:100vh;
 
 }
+ #activec {
+  display:block;
+ }
+
+ .modal {
+   display:none;
+ }
+/* header */
+ .active {
+   background-color: #3B3A51;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+ }
+
+ .header {
+   background-color: transparent;
+ }

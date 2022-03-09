@@ -167,7 +167,6 @@ margin-top:1rem;;
 `
 // 
 const Mobile=styled.div`
-   width:100%;
    display: flex;
    align-items: center;
    justify-content:center;
@@ -216,7 +215,7 @@ const Ui=styled.div`
  }
 `
 const Content=styled.div`
-   width:1204px;
+   
    height:100%;
    margin:2rem 0;
    border-radius: 15px;

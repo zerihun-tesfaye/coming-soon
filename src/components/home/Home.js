@@ -20,7 +20,7 @@ const Home = () => {
                   </span>
                  </div>
                 <h2>Design.build.improve</h2>
-                <small>coming soon</small>
+                <small>coming soon 🚶 🔥</small>
              </Title>
              <div>
             <Singups/>
