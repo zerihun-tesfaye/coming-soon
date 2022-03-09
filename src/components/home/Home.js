@@ -28,10 +28,13 @@ const Home = () => {
              </div>
             </Content>
 
-            <S_con>
+            <Scon>
                  <div className="title-c">
-                   <h3>Everything you need</h3>
-                   <p>I create  a beautiful websites your users will love</p>
+                        <div className="hrz">
+                        <h3>Everything you need</h3>
+                        <div className="line"></div>
+                     </div>
+                     <p>We create  a beautiful websites your users will love</p>
                   </div>
                <Section>
                 {
@@ -51,7 +54,7 @@ const Home = () => {
                       })
                       }
             </Section>
-            </S_con>
+            </Scon>
                <div className="ZT-col">
                   <Offers/>
                </div>
@@ -71,7 +74,7 @@ const Container=styled.div`
    width:100%;
    
   `
-const S_con=styled.div`
+const Scon=styled.div`
    width:100%;
    display:flex;
    align-items:center;
@@ -84,6 +87,23 @@ const S_con=styled.div`
    justify-content:center;
    flex-direction:column;
    gap:.31rem;
+   .hrz{
+      position:relative;
+      margin:.321rem 0;
+      h3{
+        margin:.21rem 0;
+        text-transform:capitalize;
+      }
+      .line{
+        position:absolute;
+        width:50%;
+        height:.321rem;
+        background:#6709CC;
+        border-radius:1.2rem;
+        
+      }
+
+    }
       @media screen and (max-width:978px){
           p{
             margin:0 1.8rem ;

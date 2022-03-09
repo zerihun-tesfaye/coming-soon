@@ -5,8 +5,11 @@ import  XD from "../../asset/image/xd.svg"
 const Offer = () => {
   return (
     <Container>
-          <Content>
+       <div className="hrz">
               <h2>what we offer?🤗</h2>
+              <div className="line"></div>
+         </div>
+          <Content>
                 <Ui>
                   <h3>UI/UX Design</h3>
                     <div className="circle_u">
@@ -21,40 +24,188 @@ const Offer = () => {
                     </div>
                 </Ui>
                 {/* break */}
+                 <WBcon>
+
                  <Web>
-                    <h2>website development</h2>
-                      
-                 </Web>
+                    <h3>website development</h3>
+                        <Webcon>
+                            <div className="off">
+                               <span className="hcj"></span>
+                               <h5>Html. CSS .JS</h5>
+                            </div>
+                            <div className="off">
+                               <span className="pd"></span>
+                               <h5>Python. Django</h5>
+                            </div>
+                            <div className="off">
+                               <span className="nrn"></span>
+                               <h5>NodeJs. React. NextJs</h5>
+                            </div>
+                        </Webcon>
+                      </Web>
+
                  {/* brfeak */}
                   <Mobile>
-
-                  </Mobile>
-                   
-          </Content>
+                   <h3>Mobile Development</h3>
+                  <Webcon>
+                    <div className="off">
+                        <span className="zk"></span>
+                        <h5>kotlin</h5>
+                    </div>
+                    <div className="off">
+                        <span className="zf"></span>
+                        <h5>flutter</h5>
+                    </div>
+                    <div className="off">
+                        <span className="zs"></span>
+                        <h5>swift | ios</h5>
+                    </div>
+                 </Webcon>
+              </Mobile>
+            </WBcon>
+         </Content>
     </Container>
   )
 }
 const Container=styled.div`
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+    margin-top:2rem;
+    .hrz{
+      position:relative;
+      h2{
+
+      }
+       .line{
+         position:absolute;
+         width:50%;
+         height:.321rem;
+         background:#6709CC;
+         border-radius:1.2rem;
+         
+       }
+
+    }
+
+`
+const WBcon=styled.div`
    width:100%;
+   display:flex;
+   align-items: center;
+   justify-content:center;
+   gap:1rem;
+   margin:1rem 0;
+    @media screen and (max-width:978px){
+      flex-direction:column;
+    }
 `
 const Web=styled.div`
-   width:100%;
+   display: flex;
+   align-items: center;
+   justify-content:center;
+   flex-direction:column;
+   border-radius:15px;
+   width:220px;
+   height:160px;
+    border:0.4px solid #6709CC;
+   margin:1.3rem 0;
+
+    @media screen and (max-width:978px){
+       width:270px;
+       box-shadow: 0 0 18px #00FFD8;
+    }
+    h3{
+      text-align:center;
+      text-transform:capitalize;
+      letter-spacing:0.4px;
+      font-size:1.2rem;
+    }
 `
+const Webcon=styled.div`
+display:flex;
+align-items:start;
+justify-content:start;
+flex-direction:column;
+margin-top:1rem;;
+.off{
+  align-items:center;
+  justify-content:start;
+  display:flex;
+  gap:.521rem;
+  /*  */
+   .hcj{
+     background-color:#0D9A0D;
+   }
+   .pd{
+     background-color:#C1B30C;
+   }
+   .nrn{
+     background-color:#0A3A48;
+   }
+   /*  */
+   .zk{
+     background-color:#990CC3;
+   }
+   .zf{
+     background-color:#09C0EB;
+   }
+   .zs{
+     background-color:#29BAA4;
+   }
+   /*  */
+  span{
+      width:1rem;
+      height:1rem;
+      background:#fff;
+      border-radius:50px;
+      margin:.223rem 0;
+  }
+}
+`
+// 
 const Mobile=styled.div`
    width:100%;
+   display: flex;
+   align-items: center;
+   justify-content:center;
+   flex-direction:column;
+   border-radius:15px;
+   width:220px;
+  height:160px;
+  margin:1.3rem;
+  border:.99px solid #6709CC;
+
+
+   @media screen and (max-width:978px){
+       width:270px;
+       box-shadow: 0 0 18px #00FFD8;
+    }
 `
 // 
 const Ui=styled.div`
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-padding:1rem 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  width:220px;
+  border-radius:15px;
+  height:100px;
+ border:.90px solid #0C7DC3;
+  @media screen and (max-width:978px){
+       width:250px;
+       height:120px;
+       box-shadow: 0 0 18px #00FFD8;
+    }
+
  h3{
      text-align:center;
       text-transform:capitalize;
       letter-spacing:0.4px;
-      font-size:1.3rem;
+      font-size:1rem;
+      margin-top:1.2rem;
    }
 .circle_u{
       display: flex;
@@ -66,9 +217,13 @@ padding:1rem 0;
 `
 const Content=styled.div`
    width:1204px;
-   /* height:700px; */
+   height:100%;
    margin:2rem 0;
    border-radius: 15px;
+   justify-content:center;
+   align-items:center;
+   display:flex;
+   flex-direction:column;
    h2{
      text-align:center;
       text-transform:capitalize;

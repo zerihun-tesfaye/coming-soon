@@ -44,10 +44,11 @@ const Footer = () => {
 }
 const Container=styled.div`
     width:100%;
-    margin-top:4.2rem;
+    padding-top:10px;
+    height:100%;
    
        @media screen and (max-width:978px){
-      flex-direction:column;
+       flex-direction:column;
         margin-bottom:2.2rem;
     }
   `
@@ -55,6 +56,7 @@ const Container=styled.div`
     display: flex;
     align-items: center;
     justify-content:space-around;
+    padding-bottom:1.2rem;
      @media screen and (max-width:978px){
       flex-direction:column;
         margin:0 auto;
