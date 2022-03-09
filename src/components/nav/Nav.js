@@ -1,14 +1,26 @@
-import React from 'react'
+import React,{useState} from 'react'
 import  styled from 'styled-components'
 import Contdown from '../count/Contdown';
 
 const Nav = () => {
+   const [show,setShow]=useState(false);
+
+  
+    const changeMenubg=()=>{
+      if(window.scrollY >=60){
+          setShow(true);
+
+      }else{
+        setShow(false);
+      }
+    }
+    window.addEventListener('scroll',changeMenubg);
   return (
-    <Header>
+    <Header className={show ? "active" : "header"}>
           <NavC>
             <div><Contdown/></div>
                   <Logo>
-                     <span>zeta <span className='hut'>Hut</span> </span>
+                     <span>zeta<span className='hut'>Hut</span> </span>
                   </Logo>
                      <Cart>
                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" 
@@ -26,7 +38,15 @@ const Nav = () => {
    width:100%;
    align-items:center;
    padding:10px 0;
-  height:3.5rem;
+   height:3.5rem;
+
+   #active{
+     background-color:#3B3A51;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+   }
+   .header{
+     background-color:transparent;
+   }
   `;
  const Logo=styled.div`
     display:flex;

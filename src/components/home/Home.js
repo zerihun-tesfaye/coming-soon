@@ -4,6 +4,7 @@ import CardD from '../../data/CardData'
  import Footers from '../footer/Footer'
 import Singups from '../singup/Singup'
 import Com from '../../asset/image/fff.png'
+import Offers from '../offer/Offer'
 
 const Home = () => {
   return (
@@ -18,8 +19,7 @@ const Home = () => {
                     <img src={Com} alt="" />
                   </span>
                  </div>
-                <h2>Design  <h5>+</h5><span>.Build</span></h2>
-                <h5>I create  a beautiful websites your users will love</h5>
+                <h2>Design.build.improve</h2>
                 <small>coming soon</small>
              </Title>
              <div>
@@ -27,6 +27,12 @@ const Home = () => {
 
              </div>
             </Content>
+
+            <S_con>
+                 <div className="title-c">
+                   <h3>Everything you need</h3>
+                   <p>I create  a beautiful websites your users will love</p>
+                  </div>
                <Section>
                 {
                   CardD.map((item,index)=>{
@@ -41,16 +47,20 @@ const Home = () => {
                           </div>
                       </Card>
 
-                    )
-                    })
-                    }
-                      
+                      )
+                      })
+                      }
             </Section>
+            </S_con>
+               <div className="ZT-col">
+                  <Offers/>
+               </div>
             </SubCon>
              <div>
               <Footers/>
           </div>
     </Container>
+                      
            
 
    
@@ -61,6 +71,26 @@ const Container=styled.div`
    width:100%;
    
   `
+const S_con=styled.div`
+   width:100%;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   flex-direction:column;
+   gap:1rem;
+   .title-c{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   flex-direction:column;
+   gap:.31rem;
+      @media screen and (max-width:978px){
+          p{
+            margin:0 1.8rem ;
+          }
+       }
+   }
+  `;
 const SubCon=styled.div`
    width:100%;
    display:flex;
@@ -73,7 +103,7 @@ const Content=styled.div`
     align-items:center;
     flex-direction:column;
     justify-content:center;
-    margin:5rem auto;
+    margin:3rem auto;
 `;
 const Title=styled.div`
 display:flex;
@@ -105,22 +135,18 @@ text-align:center;
     }
 }
    h2{
-     margin-bottom:.51rem;
+     margin-bottom:.41rem;
      font-weight:500;
      letter-spacing:0.3px;
      text-transform:capitalize;
-     color:#02DBC6;
+      color:#ddd;
      display:flex;
      align-items:center;
      justify-content:center;
      text-align:center;
      gap:.31rem;
-      span{
-          color:#FFD581;
-        }
-        h5{
-          color:#B00020;
-        }
+     font-size:0.94rem;
+      
    }
    h1{
      margin-bottom:.51rem;
@@ -171,6 +197,12 @@ text-align:center;
    box-sizing:border-box;
    background:#3B3A51;
    border-radius:15px;
+   cursor:pointer;
+   transition:all 0.3s;
+   &:hover{
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.2);
+    opacity:0.7;
+   }
     .Z_img{
         width:270px;
         height:200px;

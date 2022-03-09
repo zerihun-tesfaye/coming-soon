@@ -56,6 +56,7 @@ import  styled from 'styled-components'
 const Container=styled.div`
   width: 100%;
   overflow: hidden;
+  
   `;
 const Con=styled.div`
   display:flex ;
@@ -66,6 +67,7 @@ const Con=styled.div`
   justify-content:center ;
   text-align: center;
   overflow: hidden;
+  min-width: 5em;
 `;
 const Section=styled.div`
     display:flex ;
@@ -77,6 +79,7 @@ const Section=styled.div`
     p{
       font-size:1rem;
       font-weight:400 ;
+      font-weight:400;
     }
     span{
       font-size:1rem;

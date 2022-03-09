@@ -12,19 +12,21 @@ const Singup = () => {
            <button type='submit'>notify me</button>
         </Incard>
       </form>
-      <h6> Please leave your email above and 
+      <small> Please leave your email above and <br />
            we'll notify you when we're ready!
-          </h6>
+          </small>
     </Container>
 
   )
 }
 const Container=styled.div`
   width:100%;
-  h6{
+  small{
     margin:3px 0;
     font-size:.692rem;
-    text-align: center;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
      @media screen and (max-width:967px){
          margin:1px 0;
        }
