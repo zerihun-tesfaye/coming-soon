@@ -1,17 +1,34 @@
 import React from 'react'
 import  styled from 'styled-components'
+// import { useAuth } from '../../context/Authcontext';
+
+// // 
+// import { Authprovider } from '../../context/Authcontext';
 
 const Singup = () => {
+  
+  //  const emailR=useRef();
+  //   const {sign} =useAuth();
+
+  // function handleSubmit(e){
+  //   e.preventDefault()
+  //    sign(emailR.current.value)
+  // }
+
   return (
     <Container>
-        <form action="">
+
+        <form>
         <Incard>
           <div className="box">
-            <input type="text"placeholder="Enter your email"/>
-            </div>
-           <button type='submit'>notify me</button>
+            <input type="text"placeholder="Enter your email"
+             
+               />
+             </div>
+            <button  type='submit'>notify me</button>   
         </Incard>
       </form>
+    
       <small> Please leave your email above and <br />
            we'll notify you when we're ready!
           </small>
