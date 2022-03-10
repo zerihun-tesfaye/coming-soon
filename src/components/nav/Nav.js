@@ -12,7 +12,7 @@ const Nav = () => {
       setcart(!cart);
    }
     const changeMenubg=()=>{
-      if(window.scrollY >=60){
+      if(window.scrollY >=50){
           setShow(true);
 
       }else{
@@ -73,6 +73,7 @@ const Nav = () => {
      a{
        text-decoration:none;
        color:white;
+       font-weight:500;
 
      }
      span{
@@ -155,9 +156,7 @@ const Nav = () => {
 
       }
       
-      @media  screen and (max-width:968px){
-         
-        }
+     
       
       
    `;
@@ -169,13 +168,15 @@ const Nav = () => {
    const NavC =styled.div`
        display:flex;
        align-items: center;
-       justify-content:space-between;
-       margin:0 4.5rem;
+       justify-content:space-around;
        
     @media  screen and (max-width:968px){
        margin:0  1.4rem auto;
        align-items: center;
     }
+        @media screen and (max-width:500px){
+                margin:0  auto ;
+             }
   `;
    
 

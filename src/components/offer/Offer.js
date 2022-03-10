@@ -11,7 +11,7 @@ const Offer = () => {
          </div>
           <Content>
                 <Ui>
-                  <h3>UI/UX Design</h3>
+                  <h3>UI | UX Design</h3>
                     <div className="circle_u">
                         <div className="Img_f">
                             <img src={Fi} alt="" />
@@ -77,7 +77,9 @@ const Container=styled.div`
     .hrz{
       position:relative;
       h2{
-
+          text-transform:capitalize;
+          font-size:1.5rem;
+          font-weight:400;
       }
        .line{
          position:absolute;
@@ -117,12 +119,22 @@ const Web=styled.div`
        width:270px;
        box-shadow: 0 0 18px #00FFD8;
     }
+    @media screen and (max-width:500px){
+       width:250px;
+       box-shadow: 0 0 18px #00FFD8;
+    }
     h3{
       text-align:center;
       text-transform:capitalize;
       letter-spacing:0.4px;
-      font-size:1.2rem;
+      font-size:16px;
+      font-weight:400;
     }
+      h5{
+      font-size:14px;
+      font-weight:300;
+      text-transform:capitalize;
+   }
 `
 const Webcon=styled.div`
 display:flex;
@@ -176,10 +188,22 @@ const Mobile=styled.div`
   height:160px;
   margin:1.3rem;
   border:.99px solid #6709CC;
-
+   h3{
+      font-size:16px;
+      font-weight:400;
+   }
+   h5{
+      font-size:14px;
+      font-weight:300;
+      text-transform:capitalize;
+   }
 
    @media screen and (max-width:978px){
        width:270px;
+       box-shadow: 0 0 18px #00FFD8;
+    }
+   @media screen and (max-width:500px){
+       width:250px;
        box-shadow: 0 0 18px #00FFD8;
     }
 `
@@ -200,11 +224,12 @@ const Ui=styled.div`
     }
 
  h3{
-     text-align:center;
+      text-align:center;
       text-transform:capitalize;
       letter-spacing:0.4px;
-      font-size:1rem;
+      font-size:16px;
       margin-top:1.2rem;
+      font-weight:400;
    }
 .circle_u{
       display: flex;

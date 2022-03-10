@@ -31,11 +31,7 @@ const Footer = () => {
                   <a href="https://www.youtube.com/channel/UCSrOQX6Cf0MO7w9zkAinPIA">
                     <i className="fa fa-youtube-play" aria-hidden="true"></i></a>
                  </li>
-                  <br />
-                  <li>
-                  <a href="http://www.facebook.com/zetahut">
-                    <i className="fa fa-facebook" aria-hidden="true"></i></a>
-                 </li>
+                 
 
              
 
@@ -67,6 +63,26 @@ const Container=styled.div`
         gap:1rem;
         padding-bottom:1rem;
     }
+    @media screen and (max-width:920px){
+       flex-direction:row;
+       margin:0 auto;
+       gap:1.2rem;
+    }
+    @media screen and (max-width:370px){
+       flex-direction:column;
+       margin:0 auto;
+       gap:1.2rem;
+    }
+    @media screen and (max-width:390px){
+       flex-direction:column;
+       margin:0 auto;
+       gap:1.2rem;
+    }
+    @media screen and (max-width:414px){
+       flex-direction:column;
+       margin:0 auto;
+       gap:1.2rem;
+    }
     .title {
        display : flex;
        align-items: center;
@@ -79,6 +95,10 @@ const Container=styled.div`
           gap:1.6rem;
           font-weight:700;
           font-size:1rem;
+          @media screen and (max-width:500px){
+         font-size:.81rem;
+         font-weight:600;
+    }
         }
        .link{
         display : flex;
@@ -91,6 +111,10 @@ const Container=styled.div`
          letter-spacing:0.5px;
          cursor:pointer;
          transition: all 0.3s;
+         @media screen and (max-width:500px){
+         font-size:10px;
+         font-weight:300;
+    }
          &:hover{
            opacity:0.7;
          }
@@ -102,25 +126,41 @@ const Container=styled.div`
       gap:1rem;
           li{
             list-style-type: none;
+           
               gap:1rem;
               .fa-youtube-play{
                 color:#FF0000; 
                 font-size:1.6rem;
+                    @media screen and (max-width:500px){
+                font-size:1.3rem;
+             }
               }
               .fa-linkedin{
                   color:#0e76a8;
                    font-size:1.6rem;
+                       @media screen and (max-width:500px){
+                font-size:1.3rem;
+             }
               }
               .fa-facebook{
                     color: #3b5998; 
                     font-size:1.6rem;
+                        @media screen and (max-width:500px){
+                font-size:1.3rem;
+             }
               }
               .fa-twitter{
                   color:#00acee; 
                   font-size:1.6rem;
+                      @media screen and (max-width:500px){
+                font-size:1.3rem;
+             }
               }
               .fa-github{
                   font-size:1.6rem;
+                   @media screen and (max-width:500px){
+                font-size:1.3rem;
+             }
               }
             a{
               text-indent: 100%;
@@ -131,6 +171,7 @@ const Container=styled.div`
               font-weight: 500;
               font-size:1.2rem;
               transition: all 0.3s;
+              
               &:hover{
               opacity:0.7;
              }
