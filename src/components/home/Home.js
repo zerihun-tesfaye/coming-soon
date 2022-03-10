@@ -228,7 +228,7 @@ text-align:center;
  `
  const Card = styled.div`
    width:270px;
-   height:320px;
+   height:325px;
    box-sizing:border-box;
    background:#3B3A51;
    border-radius:15px;
@@ -251,9 +251,7 @@ text-align:center;
        width:250px;
       
     }
-      
-        
-         img{
+    img{
            width:100%;
            height:100%;
            object-fit:cover;
@@ -280,11 +278,12 @@ text-align:center;
         padding-top:4px;
         margin:0 .21rem;
         font-size:.852rem;
-        text-align:start;
+        text-align:center;
         align-items:center;
         justify-content:center;
         font-weight:300;
         text-transform:capitalize;
+        padding:0 .322rem;
       @media screen and (max-width:978px){
         text-align:center;
         margin-top:.44rem;
