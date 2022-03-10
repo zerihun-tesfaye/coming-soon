@@ -2,7 +2,7 @@
   "name": "e-commerce",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.zetahut.com",
+  "homepage": "https://zetahut.com",
   "dependencies": {
     "@firebase/app": "^0.7.18",
     "@testing-library/jest-dom": "^5.16.1",
