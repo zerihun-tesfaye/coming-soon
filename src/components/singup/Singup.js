@@ -18,12 +18,15 @@ const Singup = () => {
   return (
     <Container>
 
-        <form>
+        <form action="https://formsubmit.co/zetahut@gmail.com"method='Post'>
         <Incard>
           <div className="box">
-            <input type="text"placeholder="Enter your email"
+            <input type="email" name="email"placeholder="Enter your email"
+             required="true" />
+             <input type="hidden" name="_captcha" value="false"/>
+             <input type="hidden" name="_next" value="https://zetahut.com/"/>
              
-               />
+               
              </div>
             <button  type='submit'>notify me</button>   
         </Incard>
