@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
    display:none;
  }
 /* header */
- #active {
+ .active {
    background-color: #3B3A51;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
  }

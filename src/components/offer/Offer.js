@@ -49,10 +49,6 @@ const Offer = () => {
                    <h3>Mobile Development</h3>
                   <Webcon>
                     <div className="off">
-                        <span className="zk"></span>
-                        <h5>kotlin</h5>
-                    </div>
-                    <div className="off">
                         <span className="zf"></span>
                         <h5>flutter</h5>
                     </div>
@@ -228,7 +224,7 @@ const Ui=styled.div`
       text-transform:capitalize;
       letter-spacing:0.4px;
       font-size:16px;
-      margin-top:1.2rem;
+      margin-top:1.3rem;
       font-weight:400;
    }
 .circle_u{

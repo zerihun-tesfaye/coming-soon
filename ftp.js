@@ -3,9 +3,9 @@ var Deploy = require("ftp-deploy");
 var ftpDeploy = new Deploy();
 
 var config = {
-  host: "88.99.150.173",
-  user: "admin@zetahut.com",
-  password: "ZeTaHuT#2121#",
+  host:"88.99.150.173",
+  user:"admin@zetahut.com",
+  password:"ZeTaHuT#2121#",
   port: 21,
   localRoot: __dirname + "/build",
   remoteRoot: "/",

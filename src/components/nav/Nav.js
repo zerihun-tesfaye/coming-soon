@@ -62,7 +62,8 @@ const Nav = () => {
    width:100%;
    align-items:center;
    padding:10px 0;
-   height:50px;
+   height:60px;
+   position:sticky;
 
   
   `;
