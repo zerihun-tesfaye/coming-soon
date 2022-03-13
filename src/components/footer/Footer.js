@@ -15,7 +15,7 @@ const Footer = () => {
            </div>
            <div className="Z_S-icon">
                <li>
-                 <a href="http://www.linkedin.com/in/zerihun-tesfaye">
+                 <a href="http://www.linkedin.com/in/pencil">
                    <i className="fa fa-linkedin" aria-hidden="true"></i></a>
                  </li>
                <li>
@@ -27,14 +27,11 @@ const Footer = () => {
                   <a href="http://www.twitter.com/zerihun16t">
                     <i className="fa fa-twitter" aria-hidden="true"></i></a>
                  </li>
+                 <br />
                   <li>
-                  <a href="https://www.youtube.com/channel/UCSrOQX6Cf0MO7w9zkAinPIA">
-                    <i className="fa fa-youtube-play" aria-hidden="true"></i></a>
+                  <a href="https://www.facebook.com/zetahut">
+                    <i className="fa fa-facebook" aria-hidden="true"></i></a>
                  </li>
-                 
-
-             
-
             </div>
         
       </Content>
@@ -46,6 +43,7 @@ const Container=styled.div`
     width:100%;
     padding-top:10px;
     height:100%;
+    overflow:hidden;
    
        @media screen and (max-width:978px){
        flex-direction:column;
@@ -124,16 +122,11 @@ const Container=styled.div`
       display:flex;
       align-items: center;
       gap:1rem;
+    
           li{
             list-style-type: none;
+              gap:1.3rem;
            
-              gap:1rem;
-              .fa-youtube-play{
-                color:#FF0000; 
-                font-size:1.6rem;
-                    @media screen and (max-width:500px){
-                font-size:1.3rem;
-             }
               }
               .fa-linkedin{
                   color:#0e76a8;
@@ -146,7 +139,7 @@ const Container=styled.div`
                     color: #3b5998; 
                     font-size:1.6rem;
                         @media screen and (max-width:500px){
-                font-size:1.3rem;
+                      font-size:1.3rem;
              }
               }
               .fa-twitter{
@@ -171,8 +164,8 @@ const Container=styled.div`
               font-weight: 500;
               font-size:1.2rem;
               transition: all 0.3s;
-              
-              &:hover{
+              z-index:1000;
+             &:hover{
               opacity:0.7;
              }
             

@@ -34,10 +34,10 @@ const Nav = () => {
                     <CartCon> 
                        <Cartbag className={cart ? "activec":"modal"}>
                            <div className="data">
-                                 <p>your bag is empty! Keep shopping 👜</p>
+                                 <p>your bag is empty! </p>
                                   <small>coming soon 🛒</small>
                                     <Link onClick={()=>cartshow(0)} to="/">
-                                       <span> ⬅ back to Home 🛖</span>
+                                       <span> Keep shopping 👜</span>
                                       </Link>
                              </div>
                         </Cartbag> 
@@ -83,7 +83,7 @@ const Nav = () => {
        letter-spacing:2px;
        font-weight:bold;
         .hut{
-          color: #6709CC;
+          color:red;
         }
      
      }
@@ -99,29 +99,33 @@ const Nav = () => {
  const Cartbag=styled.div`
         position:absolute;
         top:55px;
-        height:150px;
-        width:200px;
+        height:100px;
+        width:150px;
         right:-100%;
         border-radius:10px;
         transition:all 0.3s ease-in-out;
-        z-index:100;
         box-shadow:0 0 20px #aad ;
+        background-color: #000;
+        z-index:100;
         @media screen and (max-width:970px){
-          background-color:#eee;
-          right:0;
-
+            right:0;
+            z-index: 1000;
         }
       .data{
          display:flex;
          align-items: center;
          justify-content: center;
          flex-direction:column;
-         top:40%;
+         top:50%;
          position:absolute;
          left:50%;
          transition:all 0.3s;
-         width:100%;
+         width:150px;
          transform:translate(-50%,-50%);
+         @media screen and (max-width:500px){
+             z-index:100;
+             background-color:#9090;
+            }
          p{
            padding-bottom:.1rem;
            color:white;
@@ -138,15 +142,15 @@ const Nav = () => {
             text-transform: capitalize;
             margin-top:.331rem;
             color:#01ACEE;
+            font-size:.522rem;
          }
          a{
            text-decoration:none;
            color:#0E76A8;
-           margin-top:.331rem;
            text-transform: capitalize;
+           color:#eded;
            span{
-              font-size:1rem;
-              margin-top:.55rem;
+              font-size:.533rem;
              @media screen and (max-width:970px){
                  margin:.331rem auto ;
                  font-size:.632rem;

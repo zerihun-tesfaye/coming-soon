@@ -1,19 +1,8 @@
 import React from 'react'
 import  styled from 'styled-components'
-// import { useAuth } from '../../context/Authcontext';
-
-// // 
-// import { Authprovider } from '../../context/Authcontext';
 
 const Singup = () => {
-  
-  //  const emailR=useRef();
-  //   const {sign} =useAuth();
 
-  // function handleSubmit(e){
-  //   e.preventDefault()
-  //    sign(emailR.current.value)
-  // }
 
   return (
     <Container>
@@ -33,7 +22,7 @@ const Singup = () => {
       </form>
     
       <small> Please leave your email above and <br />
-           we'll notify you when we're ready!
+              we'll notify you when we're ready!
           </small>
     </Container>
 
@@ -42,11 +31,12 @@ const Singup = () => {
 const Container=styled.div`
   width:100%;
   small{
-    margin:3px 0;
+    margin:2px 0;
     font-size:.692rem;
     text-align: center; 
     align-items: center;
     justify-content: center;
+    display: flex;
      @media screen and (max-width:967px){
          margin:1px 0;
        }
@@ -99,6 +89,7 @@ const Incard=styled.div`
         letter-spacing:0.5px;
         font-weight:500;
         height:40px;
+
         &:hover{
           opacity: 0.7;
         }

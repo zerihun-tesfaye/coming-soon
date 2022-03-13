@@ -5,8 +5,9 @@ import CardD from '../../data/CardData'
 import Singups from '../singup/Singup'
 import Com from '../../asset/image/fff.png'
 import Offers from '../offer/Offer'
-
+import Typewriter from 'typewriter-effect';
 const Home = () => {
+
   return (
     <Container>
        <SubCon>
@@ -19,7 +20,18 @@ const Home = () => {
                     <img src={Com} alt="" />
                   </span>
                  </div>
-                <h2>Design.build.improve</h2>
+                  <Type>
+                     <Typewriter
+                        options={{
+                        strings:['<small id="ds">design</small>',
+                        '<small id="db">Build</small>',
+                        '<small id="di">improve</small>'],
+                        autoStart: true,
+                        string:("word."),
+                        loop: true,
+                        }}
+                    />
+                  </Type>
                 <small>coming soon 🚶 🔥</small>
              </Title>
              <div>
@@ -34,7 +46,8 @@ const Home = () => {
                         <h3>Everything you need</h3>
                         <div className="line"></div>
                      </div>
-                     <p>We create  a beautiful websites your users will love</p>
+                     <small>We create  a beautiful websites <br />
+                        your users will love</small>
                   </div>
                <Section>
                 {
@@ -72,6 +85,38 @@ const Home = () => {
 }
 const Container=styled.div`
    width:100%;
+   
+  `
+const Type=styled.div`
+   display:flex;
+   align-items: center;
+   justify-content:center;
+   text-align:center;
+   color:#ddd;
+   padding:7px 0;
+   & #ds{
+      font-size:1rem;
+      color:#FFC300;
+      font-weight:600;
+      letter-spacing:.5px;
+
+     }
+    & #db{
+      color:#33C3FF;
+      font-size:1rem;
+      font-weight:600;
+      letter-spacing:.5px;
+      
+
+    }
+    & #di{
+      color:#dddddd;
+      font-size:1rem;
+      font-weight:600;
+      letter-spacing:.5px;
+
+
+    }
    
   `
 const Scon=styled.div`
@@ -131,6 +176,16 @@ align-items:center:
 justify-content:center;
 flex-direction:column;
 text-align:center;
+    .title-c{
+       small{
+    margin:2px 0;
+    font-size:.692rem;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+     }
+    }
 .Z6_text{
     display:flex;
     align-items:center;
@@ -193,6 +248,7 @@ text-align:center;
           margin:.42rem 0;
          text-transform:capitalize;
          color:#03C6EA;
+         align-items:center;
 
        }
 `;

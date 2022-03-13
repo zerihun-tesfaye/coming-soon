@@ -58,6 +58,8 @@ const Offer = () => {
                     </div>
                  </Webcon>
               </Mobile>
+              {/*  */}
+                 
             </WBcon>
          </Content>
     </Container>
@@ -96,6 +98,7 @@ const WBcon=styled.div`
    justify-content:center;
    gap:1rem;
    margin:1rem 0;
+   text-align:center;
     @media screen and (max-width:978px){
       flex-direction:column;
     }

@@ -21,7 +21,6 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color:#08217a;
-  outline: 1px solid #727074;
   height: 4px;
 
 }
