@@ -173,11 +173,16 @@ const Nav = () => {
    const NavC =styled.div`
        display:flex;
        align-items: center;
-       justify-content:space-around;
+       justify-content:space-between;
+       max-width:1100px;
+       width:100%;
+       margin:0 auto;
+       overflow:hidden;
        
     @media  screen and (max-width:968px){
-       margin:0  1.4rem auto;
+       margin:0  1.4rem ;
        align-items: center;
+       padding:0 .76em;
     }
         @media screen and (max-width:500px){
                 margin:0  auto ;

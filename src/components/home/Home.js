@@ -6,13 +6,13 @@ import Singups from '../singup/Singup'
 import Com from '../../asset/image/fff.png'
 import Offers from '../offer/Offer'
 import Typewriter from 'typewriter-effect';
+import Contact from '../Contact'
 const Home = () => {
 
   return (
     <Container>
        <SubCon>
-
-        <Content>
+         <Content>
              <Title>
                <div className="Z6_text">
                 <h1>we are cooking our website!</h1>
@@ -72,6 +72,9 @@ const Home = () => {
                   <Offers/>
                </div>
             </SubCon>
+             <div>
+               <Contact/>
+             </div>
              <div>
               <Footers/>
           </div>
