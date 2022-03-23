@@ -1,8 +1,7 @@
 import React from 'react'
  import styled from 'styled-components'
-
 const Contact = () => {
-  return (
+return (
     <Container>
       <div className="title">
          <h3>Contact</h3>
@@ -17,9 +16,10 @@ const Contact = () => {
            </div>
        </div>
            <div className="hello">
-             <span><a href="tel:0910152949">
-                  <i className="fa fa-phone">
-                 </i></a></span>
+             <span className="">
+               <a href="tel:0910152949 ">
+                   <i className="fa fa-phone"></i>
+                  </a></span>
            </div>
     </Container>
   )
