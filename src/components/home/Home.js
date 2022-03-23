@@ -32,7 +32,7 @@ const Home = () => {
                         }}
                     />
                   </Type>
-                <small>coming soon 🚶 🔥</small>
+                <small>coming soon🚶🔥</small>
              </Title>
              <div>
             <Singups/>
@@ -88,6 +88,7 @@ const Home = () => {
 }
 const Container=styled.div`
    width:100%;
+  
    
   `
 const Type=styled.div`
@@ -135,6 +136,7 @@ const Scon=styled.div`
    justify-content:center;
    flex-direction:column;
    gap:.31rem;
+   margin: .431rem 0;
    .hrz{
       position:relative;
       margin:.321rem 0;
@@ -171,7 +173,7 @@ const Content=styled.div`
     align-items:center;
     flex-direction:column;
     justify-content:center;
-    margin:3rem auto;
+    margin:7.3rem  0 auto;
 `;
 const Title=styled.div`
 display:flex;
@@ -197,8 +199,8 @@ text-align:center;
     overflow:hidden;
      
     span{
-      width:40px;
-      height:40px;
+      width:30px;
+      height:30px;
       
         @media screen and (max-width:978px){
             width:20px;

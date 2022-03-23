@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 }
 
 
- #activec {
+ .activec {
   display:block;
  }
 
@@ -40,8 +40,8 @@ body::-webkit-scrollbar {
  }
 /* header */
  .active {
-   background-color: #3B3A51;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+   background-color: #17202A;
+   transition:all 0.3s ease-in-out;
  }
 
  .header {

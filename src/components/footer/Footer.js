@@ -53,8 +53,11 @@ const Container=styled.div`
   const Content=styled.div`
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
     padding-bottom:1.2rem;
+    margin:0 auto ;
+    width:100%;
+    max-width:1100px;
      @media screen and (max-width:978px){
       flex-direction:column;
         margin:0 auto;

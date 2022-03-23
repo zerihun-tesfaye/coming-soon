@@ -36,7 +36,7 @@ const Nav = () => {
                            <div className="data">
                                  <p>your bag is empty! </p>
                                   <small>coming soon 🛒</small>
-                                    <Link onClick={()=>cartshow(0)} to="/">
+                                    <Link onClick={()=>cartshow(!cart)} to="/">
                                        <span> Keep shopping 👜</span>
                                       </Link>
                              </div>
@@ -62,8 +62,9 @@ const Nav = () => {
    width:100%;
    align-items:center;
    padding:10px 0;
-   height:60px;
-   position:sticky;
+   height:3.3rem;
+   position:fixed;
+   z-index:100;
 
   
   `;
