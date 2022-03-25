@@ -6,6 +6,7 @@ const Singup = () => {
 
   return (
     <Container>
+         <small className="coming">coming soon🚶🔥</small>
 
         <form action="https://formsubmit.co/zetahut@gmail.com"method='Post'>
         <Incard>
@@ -40,6 +41,10 @@ const Container=styled.div`
      @media screen and (max-width:967px){
          margin:1px 0;
        }
+  }
+  .coming{
+    font-size:.955rem;
+    color:#1F618D;
   }
 `;
 const Incard=styled.div`

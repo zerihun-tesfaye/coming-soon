@@ -3,37 +3,47 @@ import  styled from 'styled-components'
 import CardD from '../../data/CardData'
  import Footers from '../footer/Footer'
 import Singups from '../singup/Singup'
-import Com from '../../asset/image/fff.png'
 import Offers from '../offer/Offer'
 import Typewriter from 'typewriter-effect';
 import Contact from '../Contact'
+import img1 from '../../asset/image/hdbgh.png'
 const Home = () => {
 
   return (
     <Container>
        <SubCon>
          <Content>
-             <Title>
-               <div className="Z6_text">
-                <h1>we are cooking our website!</h1>
-                  <span>
-                    <img src={Com} alt="" />
-                  </span>
-                 </div>
-                  <Type>
+           <div className='hero'>
+            <div className="title">
+               <h1>we are cooking our website! 👨‍💻</h1>
+               <div className="type">
+
                      <Typewriter
                         options={{
-                        strings:['<small id="ds">design</small>',
-                        '<small id="db">Build</small>',
-                        '<small id="di">improve</small>'],
+                        strings:['<small id="ds"> UI | Ux Web And Mobile Design</small>',
+                        '<small id="db">design to code</small>',],
+                        
+                        
+                        
                         autoStart: true,
-                        string:("word."),
+                        string:("word"),
                         loop: true,
                         }}
-                    />
-                  </Type>
-                <small>coming soon🚶🔥</small>
-             </Title>
+                      />
+                 </div>
+                 
+                    <div className="p-g">
+                      <p>Great web design without functionality is <br /> 
+                      like a sports car with no engine. <i>"Paul Cookson"</i> </p>
+                    </div>
+
+                 </div>
+               <div className="img-g">
+                 <img src={img1} alt="" />
+                </div>
+
+               </div>
+               {/*  */}
              <div>
             <Singups/>
 
@@ -53,6 +63,7 @@ const Home = () => {
                 {
                   CardD.map((item,index)=>{
                     return(
+                      <div className="row">
                       <Card key={index}>
                         <div className="Z_img">
                             <img src={item.image} alt="design" />
@@ -60,8 +71,10 @@ const Home = () => {
                           <div className="content">
                               <h4>{item.title}</h4>
                               <p>{item.Description}</p>
+                              <p className="phone-p">{item.phone}</p>
                           </div>
-                      </Card>
+                       </Card>
+                      </div>
 
                       )
                       })
@@ -91,38 +104,8 @@ const Container=styled.div`
   
    
   `
-const Type=styled.div`
-   display:flex;
-   align-items: center;
-   justify-content:center;
-   text-align:center;
-   color:#ddd;
-   padding:7px 0;
-   & #ds{
-      font-size:1rem;
-      color:#FFC300;
-      font-weight:600;
-      letter-spacing:.5px;
 
-     }
-    & #db{
-      color:#33C3FF;
-      font-size:1rem;
-      font-weight:600;
-      letter-spacing:.5px;
-      
-
-    }
-    & #di{
-      color:#dddddd;
-      font-size:1rem;
-      font-weight:600;
-      letter-spacing:.5px;
-
-
-    }
-   
-  `
+  
 const Scon=styled.div`
    width:100%;
    display:flex;
@@ -136,7 +119,7 @@ const Scon=styled.div`
    justify-content:center;
    flex-direction:column;
    gap:.31rem;
-   margin: .431rem 0;
+   margin: 1rem 0;
    .hrz{
       position:relative;
       margin:.321rem 0;
@@ -174,126 +157,141 @@ const Content=styled.div`
     flex-direction:column;
     justify-content:center;
     margin:7.3rem  0 auto;
-`;
-const Title=styled.div`
-display:flex;
-align-items:center:
-justify-content:center;
-flex-direction:column;
-text-align:center;
-    .title-c{
-       small{
-    margin:2px 0;
-    font-size:.692rem;
-    text-align: center; 
-    align-items: center;
-    justify-content: center;
-    display: flex;
-     }
-    }
-.Z6_text{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:.752px;
-    overflow:hidden;
-     
-    span{
-      width:30px;
-      height:30px;
-      
-        @media screen and (max-width:978px){
-            width:20px;
-            height:20px;
-       }
-      img{
-        width:100%;
-        object-fit:cover;
-        height:100%;
+    width:100%;
+   
+     .hero{
+       display:flex;
+       align-items:center;
+       justify-content:space-between;
+       padding-bottom:1rem;
+       width:100%;
+       max-width: 970px;
+       margin: 0 auto;
+       gap:1rem;
+       @media screen and (max-width:970px){
+         flex-direction:column;
+         justify-content:center;
+         margin:0 auto;
 
+       }
+       
+       
+       .img-g{
+          max-width:500px;
+          height:100%;
+          width:100%;
+          @media screen and (max-width:970px){
+           flex-direction:column;
+           justify-content:center;
+           margin:0 auto;
+         
+
+       }
+       
+           img{
+             width:100%;
+             object-fit:cover;
+             height:100%;
+           }
+       }
+       /* title  */
+       .title {
+        display:flex;
+        align-items:center:
+        justify-content:center;
+        flex-direction:column;
+         @media screen and (max-width:970px){
+           margin:0 1rem;
+
+          }
+            .type{
+               display:flex;
+               width:100%;
+               align-items:center;
+               text-transform:capitalize;
+             
+        & #ds{
+            font-size:1rem;
+            color:#FFC300;
+            font-weight:600;
+            letter-spacing:.5px;
+            }
+          & #db{
+            color:#33C3FF;
+            font-size:1rem;
+            font-weight:600;
+            letter-spacing:.5px;
+            
+            
+          }
+          & #di{
+            color:#21618C;
+            font-size:1rem;
+            font-weight:600;
+            letter-spacing:.5px;
+            
+            
+          }
+        }
+        p{
+          font-size: .744rem;
+          i{
+            color:#1F618D;
+          }
+        }
       }
-    }
-}
-   h2{
-     margin-bottom:.41rem;
-     font-weight:500;
-     letter-spacing:0.3px;
-     text-transform:capitalize;
-      color:#ddd;
-     display:flex;
-     align-items:center;
-     justify-content:center;
-     text-align:center;
-     gap:.31rem;
-     font-size:0.94rem;
-      
-   }
+
+   
    h1{
      margin-bottom:.51rem;
      font-weight:700;
      letter-spacing:0.3px;
      text-transform:capitalize;
-     font-size:1.7rem;
-       @media screen and (max-width:978px){
-       font-size:20px;
+     font-size:2.5rem;
+       @media screen and (max-width:970px){
+       font-size:1.2rem;
        }
        @media screen and (max-width:500px){
-       font-size:15px;
+       font-size:1rem;
        font-weight:700;
        margin:0 auto;
     }
    }
-   h4{
-       letter-spacing:0.3px;
-        text-transform:capitalize;
-       font-weight:400;
-   }
-    small{
-         text-align:center;
-          margin:.42rem 0;
-         text-transform:capitalize;
-         color:#03C6EA;
-         align-items:center;
+   
 
        }
+       /* heroend */
+     }
 `;
+
 //  
  const Section = styled.div`
-   padding:5px 0;
-   align-items:center;
-   display: flex;
-   justify-content:center;
-   flex-direction:row;
-   flex-wrap:wrap;
-   gap:1.7rem;
-   overflow:hidden;
+   /* */
+      display: grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.1rem;
+      row-gap:1.3rem;
     @media screen and (max-width:978px){
-       flex-direction:column;
-       margin:0 auto;
-       gap:1rem;
+    flex-direction:column;
+    margin:0 auto;
+    grid-template-columns:repeat(1 ,1fr);
     }
-    @media screen and (max-width:820px){
-       flex-direction:row;
-       margin:0 auto;
-       gap:1.2rem;
-    }
-    @media screen and (max-width:920px){
-       flex-direction:row;
-       margin:0 auto;
-       gap:1.2rem;
-    }
+    
+   
+    
     h4{
       text-align:center;
+    
     }
+  }
     
  `
  const Card = styled.div`
    width:270px;
-   height:325px;
+   height:100%;
    box-sizing:border-box;
    background:#3B3A51;
    border-radius:15px;
-   cursor:pointer;
    transition:all 0.3s;
    @media screen and (max-width:500px){
        width:250px;
@@ -325,35 +323,41 @@ text-align:center;
       flex-direction:column;
       padding:5px 0;
       width:100%;
+      
       h4{
         word-wrap:break-word;
-        padding-bottom:4px;
+        padding-bottom:7px;
+        padding-top:4px;
         font-size:1rem;
         font-weight:700;
-        letter-spacing:.31px;
+        letter-spacing:.61px;
         text-transform:capitalize;
         color:white;
+          @media screen and (max-width:970px){
+            font-size: .778rem;
+          }
       }
       p{
         word-wrap:break-word;
         padding-top:4px;
         margin:0 .21rem;
-        font-size:.852rem;
-        text-align:center;
-        align-items:center;
+        font-size:.652rem;
+        text-align:start;
+        align-items:start;
         justify-content:center;
         font-weight:300;
         text-transform:capitalize;
-        padding:0 .322rem;
+        padding:0 .422rem;
       @media screen and (max-width:978px){
-        text-align:center;
         margin-top:.44rem;
+         margin:0 .421rem ;
         @media screen and (max-width:500px){
             margin:0;
             padding:0;
             font-size:13px;
-            text-align:center;
             align-items:center;
+                    margin:0 .421rem ;
+
     }
        
     }

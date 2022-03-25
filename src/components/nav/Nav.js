@@ -188,6 +188,18 @@ const Nav = () => {
         @media screen and (max-width:500px){
                 margin:0  auto ;
              }
+        @media screen and (max-width:768px){
+                margin:0  auto ;
+                margin-right:1rem;
+             }
+        @media screen and (max-width:820px){
+                margin:0  auto ;
+                margin-right:1rem;
+             }
+        @media screen and (max-width:912px){
+                margin:0  auto ;
+                margin-right:1rem;
+             }
   `;
    
 

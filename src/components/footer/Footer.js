@@ -27,11 +27,7 @@ const Footer = () => {
                   <a href="http://www.twitter.com/zerihun16t">
                     <i className="fa fa-twitter" aria-hidden="true"></i></a>
                  </li>
-                 <br />
-                  <li>
-                  <a href="https://www.facebook.com/zetahut">
-                    <i className="fa fa-facebook" aria-hidden="true"></i></a>
-                 </li>
+                 
             </div>
         
       </Content>
@@ -64,6 +60,7 @@ const Container=styled.div`
         gap:1rem;
         padding-bottom:1rem;
     }
+    
     @media screen and (max-width:920px){
        flex-direction:row;
        margin:0 auto;
@@ -84,6 +81,7 @@ const Container=styled.div`
        margin:0 auto;
        gap:1.2rem;
     }
+     
     .title {
        display : flex;
        align-items: center;
@@ -92,6 +90,15 @@ const Container=styled.div`
        @media screen and (max-width:978px){
          flex-direction:row;
     }
+    @media screen and (max-width:768px){
+                margin-left:1.3rem;
+             }
+    @media screen and (max-width:820px){
+                margin-left:1.3rem;
+             }
+    @media screen and (max-width:912px){
+                margin-left:1.3rem;
+             }
         h5{
           gap:1.6rem;
           font-weight:700;
@@ -125,7 +132,15 @@ const Container=styled.div`
       display:flex;
       align-items: center;
       gap:1rem;
-    
+    @media screen and (max-width:768px){
+                margin-right:3.3rem;
+             }
+    @media screen and (max-width:820px){
+                margin-right:3.3rem;
+             }
+    @media screen and (max-width:912px){
+                margin-right:3.3rem;
+             }
           li{
             list-style-type: none;
               gap:1.3rem;
@@ -138,13 +153,7 @@ const Container=styled.div`
                 font-size:1.3rem;
              }
               }
-              .fa-facebook{
-                    color: #3b5998; 
-                    font-size:1.6rem;
-                        @media screen and (max-width:500px){
-                      font-size:1.3rem;
-             }
-              }
+            }
               .fa-twitter{
                   color:#00acee; 
                   font-size:1.6rem;
