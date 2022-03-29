@@ -277,6 +277,13 @@ const Content=styled.div`
     grid-template-columns:repeat(1 ,1fr);
     }
     
+    @media screen and (max-width:768px){
+    margin:0 auto;
+    grid-template-columns:repeat(1,1fr);
+    }
+
+   
+    
    
     
     h4{
@@ -287,16 +294,22 @@ const Content=styled.div`
     
  `
  const Card = styled.div`
-   width:270px;
+   width:290px;
    height:100%;
    box-sizing:border-box;
    background:#3B3A51;
    border-radius:15px;
    transition:all 0.3s;
    @media screen and (max-width:500px){
-       width:250px;
-       height:270px
-       box-shadow: 0 0 18px #00FFD8;
+       width:290px;
+       height:100%;
+       
+    }
+ 
+   @media screen and (max-width:280px){
+       width:270px;
+       height:100%;
+       
     }
         
    &:hover{
@@ -304,10 +317,14 @@ const Content=styled.div`
     opacity:0.7;
    }
     .Z_img{
-        width:270px;
+        width:290px;
         height:200px;
         @media screen and (max-width:500px){
-       width:250px;
+        width:290px;
+      
+    }
+        @media screen and (max-width:280px){
+         width:270px;
       
     }
     img{

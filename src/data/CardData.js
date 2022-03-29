@@ -31,7 +31,7 @@ export const CardD=[
     Description:"Are you looking to install a new security camera or maintenance | If you are performing outdoor security camera system installation, be sure all cameras are waterproof and weather-resistant, and Commercial outdoor security cameras are a great choice for any security system  "
   },
   {
-    title:"sell  & but your laptop || phone   ",
+    title:"sell  your laptop || phone ",
     image:Sell,
     Description:`Can set your price; flexibility to sell online or meet in person; can sell and buy  any laptop or phone ||  call now `,
   },
