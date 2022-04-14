@@ -8,7 +8,7 @@ import  styled from 'styled-components'
   let interval=useRef();
 
    const startTime=()=>{
-      const count= new Date('Mar 30, 2022 00:00:00').getTime();
+      const count= new Date('Sep 30, 2022 00:00:00').getTime();
        interval =setInterval(()=>{
           const now=new Date().getTime();
           const distance = count - now;
