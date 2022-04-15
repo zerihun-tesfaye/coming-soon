@@ -20,8 +20,8 @@ const Home = () => {
 
                      <Typewriter
                         options={{
-                        strings:['<small id="ds"> UI | Ux Web And Mobile Design</small>',
-                        '<small id="db">design to code</small>',],
+                        strings:['<small id="ds">Website || mobile Development</small>',
+                        '<small id="db">UI/UX design</small> ', '<small id="db">Buy and Sell your used/new phones,laptops</small>'],
                         
                         
                         
