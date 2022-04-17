@@ -111,7 +111,7 @@ const Container=styled.div`
        .link{
         display : flex;
         align-items: center;
-        gap:.6rem;
+        gap:.8rem;
        }
        h6{
          text-align: center;
