@@ -261,7 +261,7 @@ const Content=styled.div`
 
        }
        /* heroend */
-     }
+     
 `;
 
 //  
@@ -290,7 +290,7 @@ const Content=styled.div`
       text-align:center;
     
     }
-  }
+  
     
  `
  const Card = styled.div`
@@ -318,7 +318,7 @@ const Content=styled.div`
    }
     .Z_img{
         width:290px;
-        height:200px;
+        height:160px;
         @media screen and (max-width:500px){
         width:290px;
       
@@ -349,7 +349,9 @@ const Content=styled.div`
         font-weight:700;
         letter-spacing:.61px;
         text-transform:capitalize;
+        text-align:center;
         color:white;
+
           @media screen and (max-width:970px){
             font-size: .778rem;
           }
@@ -359,12 +361,13 @@ const Content=styled.div`
         padding-top:4px;
         margin:0 .21rem;
         font-size:.652rem;
-        text-align:start;
-        align-items:start;
+        align-items:center;
         justify-content:center;
         font-weight:300;
         text-transform:capitalize;
         padding:0 .422rem;
+        padding-bottom:4px;
+        text-align:center;
       @media screen and (max-width:978px){
         margin-top:.44rem;
          margin:0 .421rem ;

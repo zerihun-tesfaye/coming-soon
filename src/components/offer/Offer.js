@@ -50,7 +50,7 @@ const Offer = () => {
                   <Webcon>
                     <div className="off">
                         <span className="zf"></span>
-                        <h5>flutter</h5>
+                        <h5>react native</h5>
                     </div>
                     <div className="off">
                         <span className="zs"></span>

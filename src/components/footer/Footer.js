@@ -15,11 +15,11 @@ const Footer = () => {
            </div>
            <div className="Z_S-icon">
                <li>
-                 <a href="http://www.linkedin.com/in/pencil">
+                 <a href="http://www.linkedin.com/in/zerihunt16">
                    <i className="fa fa-linkedin" aria-hidden="true"></i></a>
                  </li>
                <li>
-                 <a href="http://www.github.com/zetahut">
+                 <a href="http://www.github.com/zerihun-tesfaye">
                    <i className="fa fa-github" aria-hidden="true"></i></a>
                  </li>
 
