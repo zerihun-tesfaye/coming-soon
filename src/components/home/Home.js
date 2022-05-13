@@ -7,9 +7,11 @@ import Offers from '../offer/Offer'
 import Typewriter from 'typewriter-effect';
 import Contact from '../Contact'
 import img1 from '../../asset/image/hdbgh.png'
+import { AnimatePresence,motion } from 'framer-motion'
 const Home = () => {
 
   return (
+    <AnimatePresence initial={false}>
     <Container>
        <SubCon>
          <Content>
@@ -38,9 +40,12 @@ const Home = () => {
                     </div>
 
                  </div>
-               <div className="img-g">
-                 <img src={img1} alt="" />
-                </div>
+                 <motion.div
+                 >
+                  <div className="img-g">
+                    <img src={img1} alt="" />
+                    </div>
+                </motion.div>
 
                </div>
                {/*  */}
@@ -95,7 +100,7 @@ const Home = () => {
                       
            
 
-   
+   </AnimatePresence>
                       
   )
 }
